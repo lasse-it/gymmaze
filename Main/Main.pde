@@ -1,15 +1,31 @@
 Character c;
-Wall w;
+PImage background2;
+Wall[] w = new Wall[50];
 
 void setup(){
-  c = new Character(height/2, width/2, 35);
-  w = new Wall(50, 50, 100, 50);
+  level = 2;
+  
+  background2 = loadImage("Image2.png");
+  for (int i = 0; i < w.length; i++){
+    w[i] = new Wall(-100, 0, 0, 0);
+  }
+  c = new Character(height/2, width/2, 20);
+  
 size(1000, 700);
 }
 
 void draw(){
-  background(0);
+  
+  image(background2, 0, 0);
+  if (level == 2){
+    level2();
+  }
+  
+  
+  fill(300, 300, 300);
   
   c.tick();
-  w.visual();
+  for (int i = 0; i < w.length; i++){
+    w[i].visual();
+  }
 }
