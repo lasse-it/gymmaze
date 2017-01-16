@@ -6,6 +6,7 @@ size(1000, 700);
 }
 
 void draw(){
+  background(0);
   
-  c.visual();
+  c.tick();
 }
