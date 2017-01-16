@@ -1,8 +1,16 @@
+import ddf.minim.*;
+Minim minim;
+AudioPlayer sound;
+
+
 Character c;
 PImage background2;
 Wall[] w = new Wall[50];
 
 void setup(){
+  minim = new Minim(this);
+  sound = minim.loadFile("sound.mp3");
+  sound.loop();
   level = 2;
   
   background2 = loadImage("Image2.png");
