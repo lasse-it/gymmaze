@@ -9,6 +9,7 @@ class Wall {
 
 
   void visual() {
+     
     rect(x_pos, y_pos, x_len, y_len);
     if (c.x+c.d >= x_pos) {
       if (c.x <= x_pos+x_len) {
