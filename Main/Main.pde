@@ -16,5 +16,7 @@ void draw(){
   c.tick();
   for (int i = 0; i < w.length; i++){
     w[i].visual();
+    
+    Score();
   }
 }

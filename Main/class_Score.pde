@@ -1,8 +1,5 @@
-int main;
-int mainPerSec;
-
-void SPS() {
+void Score() {
   if (frameCount % 60 == 0) {
-    main += mainPerSec;
+    
   }
 }
