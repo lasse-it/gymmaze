@@ -1,8 +1,0 @@
-int gymmaze;
-int gymmazePerSec;
-
-void SPS() {
-  if (frameCount % 60 == 0) {
-    gymmaze += gymmazePerSec;
-  }
-}
