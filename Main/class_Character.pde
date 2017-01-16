@@ -14,19 +14,19 @@ class Character {
     
      if(key=='d')
      {     
-       x += 1; 
+       x += speed; 
      }
      if(key=='a')
      {     
-       x -= 1; 
+       x -= speed; 
      }
      if(key=='w')
      {     
-       y -= 1; 
+       y -= speed; 
      }
      if(key=='s')
      {     
-       y += 1; 
+       y += speed; 
      }
     
   
