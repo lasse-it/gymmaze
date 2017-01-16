@@ -15,19 +15,19 @@ class Wall {
         if (c.y+c.d >= y_pos) {
           if (c.y <= y_pos+y_len) {
             //Character walked into wall
-            if (d_key)
+            if (key == 'd')
             {     
               c.x = x_pos-c.d-3;
             }
-            if (a_key)
+            if (key == 'a')
             {     
               c.x = x_pos+x_len+3;
             }
-            if (w_key)
+            if (key == 'w')
             {     
               c.y = y_pos+y_len+3;
             }
-            if (s_key)
+            if (key == 's')
             {     
               c.y = y_pos-c.d-3;
             }

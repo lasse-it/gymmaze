@@ -9,22 +9,23 @@ class Character {
   void tick() {
     rect(x, y, d, d);
 
-
-    if (d_key)
-    {     
-      x += speed;
-    }
-    if (a_key)
-    {     
-      x -= speed;
-    }
-    if (w_key)
-    {     
-      y -= speed;
-    }
-    if (s_key)
-    {     
-      y += speed;
+    if (keyPressed) {  
+      if (key == 'd')
+      {     
+        x += speed;
+      }
+      if (key == 'a')
+      {     
+        x -= speed;
+      }
+      if (key == 'w')
+      {     
+        y -= speed;
+      }
+      if (key == 's')
+      {     
+        y += speed;
+      }
     }
   }
 }
